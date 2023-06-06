@@ -1,0 +1,19 @@
+version: '3'
+
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: multi.dockerfile
+      target: deps
+  builder:
+    build:
+        context: .
+        dockerfile:  multi.dockerfile
+        target: build
+  pro:
+    build:
+        context: .
+        dockerfile:  multi.dockerfile
+        target: prod

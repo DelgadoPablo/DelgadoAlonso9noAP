@@ -1,0 +1,14 @@
+body {
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 30%;
+}
+
+.bg-black {
+  background: #090909;
+}
