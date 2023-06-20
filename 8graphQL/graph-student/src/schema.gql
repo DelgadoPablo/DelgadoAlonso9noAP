@@ -1,0 +1,31 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Citamedica {
+  id: ID!
+  nombre: String!
+  horario: String!
+}
+
+type Query {
+  citas: [Citamedica!]!
+  Citas(id: ID!): Citamedica!
+}
+
+type Mutation {
+  createCitamedica(createCitamedicaInput: CreateCitamedicaInput!): Citamedica!
+  updateCitamedica(updateCitamedicaInput: UpdateCitamedicaInput!): Citamedica!
+  removeCitamedica(id: ID!): Citamedica!
+}
+
+input CreateCitamedicaInput {
+  nombre: String!
+  horario: String!
+}
+
+input UpdateCitamedicaInput {
+  nombre: String
+  horario: String
+  id: ID!
+}
